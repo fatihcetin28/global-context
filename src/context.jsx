@@ -8,8 +8,9 @@ export const useGlobalContext = () => useContext(GlobalContext)
 const AppContext = (props) => {
 
   const [name, setName] = useState('kamil')
+  const deneme = 'faikov'
 
-  return <GlobalContext.Provider value={{name, setName}}>
+  return <GlobalContext.Provider value={{name, setName, deneme}}>
     {props.children}
   </GlobalContext.Provider>
 }

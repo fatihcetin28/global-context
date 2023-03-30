@@ -3,14 +3,14 @@ import { useGlobalContext } from './context'
 
 function App() {
   
-  const { name, setName } = useGlobalContext()
+  const { name, setName, deneme } = useGlobalContext()
   console.log(name);
   
 
   return (
     <div className="App">
       <h1>{name}</h1>
-      <button onClick={()=>setName('Hasan')}>switch name</button>
+      <button onClick={()=>setName(deneme)}>switch name</button>
     </div>
   )
 }
